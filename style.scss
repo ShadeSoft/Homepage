@@ -1,88 +1,91 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-	font-size: 16px;
+    animation: animatedBackground 90s linear infinite;
+    background: url(/bg.jpg) top center repeat;
+    font-size: 16px;
 }
 
 .hidden { display: none; }
 
 header {
-	background: linear-gradient(rgba(128, 128, 128, .33), rgba(32, 32, 32, .33));
-	box-shadow: 0px 2px 1rem;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 4rem;
-	z-index: 1;
+    background: linear-gradient(rgba(128, 128, 128, .33), rgba(64, 64, 64, .33));
+    box-shadow: 0px 2px 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 4rem;
+    z-index: 1;
 
-	nav {
-		display: flex;
-		font-size: 2rem;
-		height: 100%;
-		line-height: 2em;
+    nav {
+        display: flex;
+        font-size: 2rem;
+        height: 100%;
+        line-height: 2em;
 
-		a {
-			align-items: center;
-			align-self: center;
-			display: flex;
-			justify-content: center;
-			flex-grow: 1;
-			outline: none;
-			text-decoration: none;
+        a {
+            align-items: center;
+            align-self: center;
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+            outline: none;
+            text-decoration: none;
 
-			i {
-				color: rgba(0, 0, 0, .75);
-				transition: color .4s, text-shadow .4s;
-			}
+            i {
+                color: rgba(0, 0, 0, .66);
+                transition: color .4s, text-shadow .4s;
+            }
 
-			&:hover, &:focus, &:active {
-				i {
-					text-shadow: 0 0 .5rem;
+            &:hover, &:focus, &:active {
+                i {
+                    text-shadow: 0 0 .5rem;
 
-					&.fa-facebook { color: #3b5998; }
-					&.fa-twitter { color: #00aced; }
-					&.fa-github { color: #1e2327; }
-					&.fa-envelope { color: #fefea9; }
-				}
-			}
-		}
-	}
+                    &.fa-facebook { color: #3b5998; }
+                    &.fa-twitter { color: #00aced; }
+                    &.fa-github { color: #1e2327; }
+                    &.fa-envelope { color: #fefea9; }
+                }
+            }
+        }
+    }
 }
 
 main {
-	align-items: center;
-	animation: animatedBackground 90s linear infinite;
-	background: url(/bg.jpg) repeat 0 0;
-	display: flex;
-	justify-content: center;
-	padding: 0 5%;
-	width: 100vw;
-	height: 100vh;
-	z-index: 0;
+    background: rgba(0, 0, 0, .75);
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
 
-	img {
-		opacity: .5;
-		width: 100%;
-	}
+    div {
+        animation: animatedBackground 90s linear infinite;
+        background: url(/bg.jpg) top center repeat;
+        -webkit-mask: url(/logo.svg) no-repeat center center;
+        mask: url(/logo.svg) no-repeat center center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        width: 100vw;
+        height: 100vh;
+    }
 }
 
 footer {
-	display: flex;
-	position: fixed;
-	bottom: 0;
-	right: 0;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
 
-	figure {
-		margin: 0 .5rem;
-	}
+    figure {
+        margin: 0 .5rem;
+    }
 }
 
 @keyframes animatedBackground {
-	from { background-position: 0 0; }
-	to { background-position: 1024px 0; }
+    from { background-position: 0 0; }
+    to { background-position: 1024px 0; }
 }
