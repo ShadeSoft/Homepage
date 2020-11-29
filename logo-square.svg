@@ -1,24 +1,2 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Creator: CorelDRAW X6 -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="50mm" height="50mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 5000 5000"
- xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
-  <style type="text/css">
-   <![CDATA[
-    .fil0 {fill:#212121}
-   ]]>
-  </style>
- </defs>
- <g id="Réteg_x0020_1">
-  <metadata id="CorelCorpID_0Corel-Layer"/>
-  <g id="_766667312">
-   <path class="fil0" d="M1758 1684c-176,0 -266,101 -267,302l-1 302 2004 0 0 0 401 0 0 592 4 205c0,399 -234,600 -702,600l-702 0 -1403 0 -4 -396 1869 0 273 0c176,0 265,-102 265,-304l0 -300 -2006 0 0 0 -397 0 0 -592 -4 -204c0,-399 234,-600 702,-600l701 0 1404 0 4 396 -1869 0 -273 0 1 -1z"/>
-   <path class="fil0" d="M2650 0c1262,77 2272,1085 2345,2344l-434 0c-69,-1023 -887,-1841 -1911,-1917l0 -427 0 1z"/>
-   <path class="fil0" d="M2339 4994c-1255,-80 -2257,-1080 -2337,-2331l434 0c81,1009 889,1815 1902,1892l0 439 1 0z"/>
-   <path class="fil0" d="M-5 2345c70,-1261 1078,-2271 2339,-2350l0 427c-1024,78 -1839,900 -1906,1923l-433 0z"/>
-   <path class="fil0" d="M4993 2657c-80,1255 -1088,2257 -2348,2332l0 -439c1018,-73 1833,-879 1914,-1893l434 0z"/>
-  </g>
- </g>
-</svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 5000 5000"><style>path{fill:#212121}</style><path d="M1758 1684c-176 0-266 101-267 302l-1 302h2405v592l4 205c0 399-234 600-702 600H1092l-4-396h2142c176 0 265-102 265-304v-300H1092v-592l-4-204c0-399 234-600 702-600h2105l4 396H1757l1-1z"/><path d="M2650 0c1262 77 2272 1085 2345 2344h-434c-69-1023-887-1841-1911-1917V0v1zM2339 4994C1084 4914 82 3914 2 2663h434c81 1009 889 1815 1902 1892v439h1zM-5 2345C65 1084 1073 74 2334-5v427C1310 500 495 1322 428 2345H-5zM4993 2657c-80 1255-1088 2257-2348 2332v-439c1018-73 1833-879 1914-1893h434z"/></svg>
