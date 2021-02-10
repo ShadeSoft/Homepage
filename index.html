@@ -4,8 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ShadeSoft</title>
+	<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
 	<link rel="stylesheet" href="/style.css">
-	<script src="//kit.fontawesome.com/7f02dc25d5.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/7f02dc25d5.js" crossorigin="anonymous"></script>
 	<!-- icon -->
 	<link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png">
@@ -28,33 +29,37 @@
 	<style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#FFFFFF !important;background-color:#FF813F !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#FFFFFF !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<nav>
-			<a href="https://facebook.com/ShadeSoftDev" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-			<a href="https://twitter.com/ShadeSoftDev" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-			<a href="https://github.com/ShadeSoft" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-			<a href="mailto:info@shadesoft.hu" title="E-mail"><i class="fas fa-envelope"></i></a>
+	<header class="fixed top-0 left-0 w-screen h-16 z-10">
+		<nav class="h-full flex items-center justify-evenly">
+			<a href="https://facebook.com/ShadeSoftDev" target="_blank" title="Facebook" class="no-underline outline-none"><i class="fab fa-facebook fa-2x"></i></a>
+			<a href="https://twitter.com/ShadeSoftDev" target="_blank" title="Twitter" class="no-underline outline-none"><i class="fab fa-twitter fa-2x"></i></a>
+			<a href="https://github.com/ShadeSoft" target="_blank" title="GitHub" class="no-underline outline-none"><i class="fab fa-github fa-2x"></i></a>
+			<a href="mailto:info@shadesoft.hu" title="E-mail" class="no-underline outline-none"><i class="fas fa-envelope fa-2x"></i></a>
 		</nav>
 	</header>
-	<main>
-		<h1 class="hidden">ShadeSoft</h1>
-		<div></div>
+	<main class="w-screen h-screen z-0">
+		<h1 class="sr-only">ShadeSoft</h1>
+		<div class="w-11/12 h-screen"></div>
 	</main>
-	<footer>
-		<figure>
-			<script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy us a coffee', '#29abe0', 'shadesoft');kofiwidget2.draw();</script>
-		</figure>
-		<figure>
-			<a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/ShadeSoft"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy us a coffee"><span style="margin-left:5px">Buy us a coffee</span></a>
-		</figure>
-		<figure>
-			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-				<input type="hidden" name="cmd" value="_s-xclick">
-				<input type="hidden" name="hosted_button_id" value="J8NTCLNEHT9AJ">
-				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-			</form>
-		</figure>
+	<footer class="fixed bottom-0 left-0 w-screen xl:flex text-center text-white">
+		<div class="flex-1 md:flex justify-center">
+			<figure class="m-3">
+				<script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy us a coffee', '#29abe0', 'shadesoft');kofiwidget2.draw();</script>
+			</figure>
+			<figure class="m-3">
+				<a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/ShadeSoft"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy us a coffee"><span style="margin-left:5px">Buy us a coffee</span></a>
+			</figure>
+		</div>
+		<div class="flex-1 lg:flex justify-center">
+			<figure class="m-3 lg:flex items-center">
+				<i class="fab fa-bitcoin fa-fw fa-2x" title="Bitcoin"></i>
+				<figcaption class="inline pl-1">bc1q2ec0jlyhxe75fkwayy3dkg2khpz7tk9f3yyk2n</figcaption>
+			</figure>
+			<figure class="m-3 lg:flex items-center">
+				<i class="fab fa-ethereum fa-fw fa-2x" title="Ethereum"></i>
+				<figcaption class="inline pl-1">0x7731b7C5E7ce4b8497572C3C20E60d99C48fAC32</figcaption>
+			</figure>
+		</div>
 	</footer>
 </body>
 </html>
